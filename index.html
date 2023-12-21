@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <title>Avengers</title>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    body {
+      background-color: red;
+    }
+
+    header {
+      min-height: 3vh;
+      background-color: black;
+      padding: 1.2rem 0rem;
+      position: fixed;
+      width: 100%;
+      margin: auto;
+      z-index: 99;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #navImg {
+      justify-content: flex-start;
+      flex-grow: 3;
+      padding-left: 50px;
+    }
+
+    #navImg img {
+      height: 70px;
+      color: red;
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    li {
+      padding-right: 60px;
+      list-style-type: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    section {
+      min-height: 150vh;
+      background-color: red;
+      background:url('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/95/Energy_Circle_DS.jpg/revision/latest/scale-to-width-down/1000?cb=20210')no-repeat center 115px fixed;
+      
+      background-size: 99%;
+    }
+
+    .container {
+      padding-top: 250px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      color: white;
+    }
+
+    .info {
+      width: 45%;
+    }
+
+    .info h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .info p {
+      line-height: 1.8rem;
+    }
+
+    blockquote {
+      font-family: Georgia, serif;
+      position: relative;
+      margin: 0.5em;
+      padding: 0.5em 2em 0.5em 3em;
+    }
+
+    blockquote:before {
+      font-family: Georgia, serif;
+      position: absolute;
+      font-size: 4em;
+      line-height: 1;
+      top: 0;
+      left: 0;
+      content: "\201C";
+    }
+
+    blockquote:after {
+      font-family: Georgia, serif;
+      position: absolute;
+      float: right;
+      font-size: 4em;
+      line-height: 1;
+      right: 0;
+      bottom: -0.5em;
+      content: "\201D";
+    }
+ 
+    #bio {
+      background: url('https://media1.giphy.com/media/oJFfKzLKROzhR8Vxuq/giphy.gif?cid=ecf05e477l1watov9rqkj0wo3afe3ueadz2hkl3mp53cnj7u&ep=v1_gifs_search&rid=giphy.gif&ct=g')no-repeat center center fixed;
+      background-size: 99%;
+    }
+
+    .container-bio {
+      padding-top: 400px;
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      color: white;
+	
+      padding-right: 30px;
+    }
+
+    .container-bio .info {
+      border-radius: 25px;
+      padding: 10px;
+      background-color:rgba(0, 0, 0, 0.2);
+      -webkit-backdrop-filter: blur(9px);
+      backdrop-filter: blur(9px);
+    }
+
+    footer {
+      height: 100px;
+      background-color: black;
+      text-align: center;
+      color: white;
+    }
+
+    footer h3 {
+      padding-top: 60px;
+    }
+
+    footer h3 a {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="navImg">
+        <img src="https://i.pinimg.com/originals/30/c5/54/30c554886c6eab77a134b335e3ae3b56.gif" alt="logo">
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Exit</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section> id="main">
+    <div class="container">
+      <div></div>
+      <div class="info">
+         <h1>Dr Strange</h1>
+    <p>
+ <blockquote>
+  We Never Lose Our Demons,  We Only Learn To Live Above Them
+  </blockquote>
+        </p>
+      </div>
+    
+  </section>
+  <section id="bio">
+    <div class="container-bio">
+      <div></div>
+      <div class="info">
+        <h1>BIO</h1>
+        <p>
+          Stephen Strange was a surgeon whose career was cut short when his steady hands were damaged in an accident. Seeking a cure to fix his hands that conventional medicine could not provide, Strange embarked on a quest to find the Ancient One, which saw him become Master of the Mystic Arts! Sworn to protect this world from other-worldly threats, Strange remains vigilant as Earth's mystical protector.
+   </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <h3>2023 &copy; Designed & developed by <a href="#">jash-777</a></h3>
+  </footer>
+</body>
+</html>
